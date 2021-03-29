@@ -1,0 +1,298 @@
+$primary-color: #ffeacb;
+$secondary-color: #df2525;
+
+@mixin capitalize {
+  text-transform: capitalize;
+}
+
+@mixin display($display: block) {
+  display: $display;
+}
+a.active {
+  background-color: $secondary-color !important;
+  border-radius: 0 !important;
+}
+
+a.nav-link.active {
+  color: $primary-color !important;
+}
+
+.border-dark.border-dark {
+  border-color: $secondary-color !important;
+}
+
+body {
+  background-color: $primary-color !important;
+  font-size: 16px;
+  color: $secondary-color !important;
+  font-family: "Raleway", sans-serif !important;
+}
+
+a.nav-link {
+  color: $secondary-color !important;
+  font-size: 1.1rem;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.hero {
+  min-height: 90vh;
+  .hero-text {
+    @include capitalize();
+    font-weight: 400;
+    font-size: 4.5rem;
+    max-width: 18ch;
+  }
+  .hero-mobile {
+    @include display(none);
+  }
+}
+
+.why-kuma {
+  min-height: 100vh;
+  .why-img {
+    width: 90%;
+  }
+  h1 {
+    font-weight: bold;
+    @include capitalize();
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+}
+
+.card {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.benefit {
+  min-height: 100vh;
+
+  h2 {
+    @include capitalize();
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  i {
+    font-size: 1.7rem;
+  }
+}
+
+.coming-soon-app {
+  h1 {
+    @include capitalize();
+  }
+}
+
+.hero {
+  .service-title {
+    font-size: 3.5rem;
+  }
+}
+
+.service {
+  h1 {
+    @include capitalize();
+    font-size: 3rem;
+  }
+  .card {
+    min-height: 80vh !important;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+    width: 70%;
+  }
+}
+
+.who-title {
+  min-height: 70vh;
+  @include capitalize();
+}
+
+.story-kuma p,
+.story-covid p,
+.story-culinary p,
+.story-economy p {
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+.contributors h1 {
+  min-height: 30vh;
+  @include capitalize();
+}
+
+.tab-content h2,
+.contributors h1 {
+  font-weight: bold;
+}
+
+.tab-content h2 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $secondary-color;
+}
+
+.join {
+  flex: 1;
+  min-height: 58vh;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  h1 {
+    @include capitalize();
+    // font-size: 4rem;
+  }
+}
+
+.join-supplier {
+  background-color: #ffd9ad;
+}
+.join-produsen {
+  background-color: #f0cba0;
+}
+
+.join-supplier-page {
+  min-height: 60vh;
+}
+
+footer {
+  min-height: 30vh;
+  background-image: linear-gradient(
+    180deg,
+    rgba(238, 203, 153, 0),
+    #daaf71 100%
+  );
+  justify-content: space-between;
+
+  p {
+    display: inline;
+    font-weight: bold;
+  }
+  a {
+    color: $secondary-color;
+    font-weight: bold;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .hero {
+    .service-title {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  a.nav-link {
+    margin-left: 1.2rem;
+  }
+  .nav-item {
+    background-color: #fadcb0;
+  }
+  .hero {
+    .hero-text {
+      font-size: 2rem;
+    }
+    .service-title {
+      font-size: 1.6rem;
+    }
+
+    .hero-mobile {
+      display: block;
+    }
+    .hero-desktop {
+      @include display(none);
+    }
+  }
+  .why-kuma {
+    h1 {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem !important;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 0 !important;
+    }
+    .why-img {
+      width: 100%;
+    }
+    div.img {
+      order: 12;
+    }
+  }
+
+  video {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+    align-content: flex-end !important;
+    .menu,
+    .copyright,
+    .social-media {
+      width: 100%;
+      @include display(flex);
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .copyright {
+      order: 12;
+      margin-bottom: 0;
+    }
+    a {
+      @include display(inline-block);
+    }
+  }
+
+  .service {
+    p {
+      font-size: 1.2em;
+      width: 100%;
+    }
+  }
+
+  .hero-about {
+    flex-direction: column;
+    h1 {
+      font-size: 1.5rem;
+      width: 70% !important;
+    }
+  }
+
+  .tab-pane {
+    img {
+      width: 60%;
+    }
+    h3 {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+
+  .nav.nav-pills {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}

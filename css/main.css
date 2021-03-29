@@ -1,0 +1,300 @@
+a.active {
+  background-color: #df2525 !important;
+  border-radius: 0 !important;
+}
+
+a.nav-link.active {
+  color: #ffeacb !important;
+}
+
+.border-dark.border-dark {
+  border-color: #df2525 !important;
+}
+
+body {
+  background-color: #ffeacb !important;
+  font-size: 16px;
+  color: #df2525 !important;
+  font-family: "Raleway", sans-serif !important;
+}
+
+a.nav-link {
+  color: #df2525 !important;
+  font-size: 1.1rem;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.hero {
+  min-height: 90vh;
+}
+
+.hero .hero-text {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 4.5rem;
+  max-width: 18ch;
+}
+
+.hero .hero-mobile {
+  display: none;
+}
+
+.why-kuma {
+  min-height: 100vh;
+}
+
+.why-kuma .why-img {
+  width: 90%;
+}
+
+.why-kuma h1 {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.why-kuma p {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+
+.card {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.benefit {
+  min-height: 100vh;
+}
+
+.benefit h2 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.benefit i {
+  font-size: 1.7rem;
+}
+
+.coming-soon-app h1 {
+  text-transform: capitalize;
+}
+
+.hero .service-title {
+  font-size: 3.5rem;
+}
+
+.service h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.service .card {
+  min-height: 80vh !important;
+}
+
+.service h2 {
+  font-size: 2.5rem;
+}
+
+.service p {
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+.who-title {
+  min-height: 70vh;
+  text-transform: capitalize;
+}
+
+.story-kuma p,
+.story-covid p,
+.story-culinary p,
+.story-economy p {
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+.contributors h1 {
+  min-height: 30vh;
+  text-transform: capitalize;
+}
+
+.tab-content h2,
+.contributors h1 {
+  font-weight: bold;
+}
+
+.tab-content h2 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #df2525;
+}
+
+.join {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 58vh;
+  border-radius: 1rem;
+  margin: 0 1rem;
+}
+
+.join h1 {
+  text-transform: capitalize;
+}
+
+.join-supplier {
+  background-color: #ffd9ad;
+}
+
+.join-produsen {
+  background-color: #f0cba0;
+}
+
+.join-supplier-page {
+  min-height: 60vh;
+}
+
+footer {
+  min-height: 30vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 203, 153, 0)), to(#daaf71));
+  background-image: linear-gradient(180deg, rgba(238, 203, 153, 0), #daaf71 100%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer p {
+  display: inline;
+  font-weight: bold;
+}
+
+footer a {
+  color: #df2525;
+  font-weight: bold;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .hero .service-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  a.nav-link {
+    margin-left: 1.2rem;
+  }
+  .nav-item {
+    background-color: #fadcb0;
+  }
+  .hero .hero-text {
+    font-size: 2rem;
+  }
+  .hero .service-title {
+    font-size: 1.6rem;
+  }
+  .hero .hero-mobile {
+    display: block;
+  }
+  .hero .hero-desktop {
+    display: none;
+  }
+  .why-kuma h1 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem !important;
+  }
+  .why-kuma p {
+    font-size: 1.2rem;
+    margin-top: 0 !important;
+  }
+  .why-kuma .why-img {
+    width: 100%;
+  }
+  .why-kuma div.img {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+  }
+  video {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: flex-end !important;
+    -ms-flex-line-pack: end !important;
+        align-content: flex-end !important;
+  }
+  footer .menu,
+  footer .copyright,
+  footer .social-media {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1rem;
+  }
+  footer .copyright {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+    margin-bottom: 0;
+  }
+  footer a {
+    display: inline-block;
+  }
+  .service p {
+    font-size: 1.2em;
+    width: 100%;
+  }
+  .hero-about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-about h1 {
+    font-size: 1.5rem;
+    width: 70% !important;
+  }
+  .tab-pane img {
+    width: 60%;
+  }
+  .tab-pane h3 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .nav.nav-pills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*# sourceMappingURL=main.css.map */
